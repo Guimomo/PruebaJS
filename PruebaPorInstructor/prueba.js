@@ -14,7 +14,7 @@ const cargarJSON = async (url) => {
 const usuario = async () => await cargarJSON("https://jsonplaceholder.typicode.com/users");
 
 //funciones expresadas = userPost, postComments, userAlbum, albumPhoto y userWorks, que recibiran el argumento(id) y recibe un parametro filtrado por el arcgumento
-const userPosts = async (userID) => await cargarJSON(`https://jsonplaceholder.typicode.com/posts?userId=${userID}`);
+const userPosts = async (userID) => await cargarJSON(`https://jsonplaceholder.typicode.com/posts?d=${userID}`);
 const postComments = async (postID) => await cargarJSON(`https://jsonplaceholder.typicode.com/comments?postId=${postID}`);
 
 const userAlbum = async (userID) => await cargarJSON(`https://jsonplaceholder.typicode.com/albums?userId=${userID}`);
